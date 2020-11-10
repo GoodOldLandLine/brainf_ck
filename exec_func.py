@@ -57,7 +57,7 @@ class Memory():
         if self.b[self.p] == 0xff:
             if self.prohibited_overflow:
                 raise OverflowError(
-                "memory was called inc at index {}"
+                "memory.inc was called at index {}"
                 " but overflowed".format(self.p))
             else:
                 self.b[self.p] = 0x00
@@ -73,7 +73,7 @@ class Memory():
         if self.b[self.p] == 0x00:
             if self.prohibited_overflow:
                 raise OverflowError(
-                "memory was called dec at index {}"
+                "memory.dec was called at index {}"
                 " but overflowed".format(self.p))
             else:
                 self.b[self.p] = 0xff
