@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[3]:
-
-
 from exec_func import execute, set_max_loops, optimizer
 from code_generator import Var
 set_max_loops(100000000)
@@ -135,16 +131,5 @@ code = (
 )
 print(optimizer(code))
 
-
-# In[6]:
-
-
 input_code="\x02山田太郎"
 execute(optimizer(code), input_code=input_code, prohibited_overflow=True)
-
-
-# In[ ]:
-
-
-
-
